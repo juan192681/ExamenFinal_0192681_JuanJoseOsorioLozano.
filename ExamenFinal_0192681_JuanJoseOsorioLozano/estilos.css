@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),
+    url("img/WhatsApp Image4 2026-06-18 at 6.18.59 PM.jpeg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    color:white;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero-content{
+    text-align:center;
+    margin-top:150px;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:3rem;
+}
+
+.hero-content h2{
+    margin-top:15px;
+}
+
+.hero-content p{
+    margin-top:20px;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.buttons{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#2d8659;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    margin:10px;
+}
+
+.btn-outline{
+    background:transparent;
+    border:2px solid white;
+}
+
+section{
+    padding:80px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.problems{
+    display:grid;
+    gap:20px;
+}
+
+.problem-card{
+    background:white;
+    padding:20px;
+    border-left:5px solid #2d8659;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+
+    opacity:0;
+    transform:translateY(50px);
+    transition:1s;
+}
+
+.card.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+.impact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.impact-box{
+    background:white;
+    padding:30px;
+    text-align:center;
+    font-size:2rem;
+    border-radius:10px;
+}
+
+.impact-box p{
+    margin-top:10px;
+    font-size:1rem;
+}
+
+form{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+select,
+button{
+    padding:15px;
+}
+
+button{
+    background:#2d8659;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+footer{
+    background:#154734;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .navbar ul{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-content h1{
+        font-size:2rem;
+    }
+
+}
+
+.solutions-description{
+    background:white;
+    margin-top:40px;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+    line-height:1.8;
+}
+
+.solutions-description h3{
+    color:#154734;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.solutions-description p{
+    margin-bottom:15px;
+    text-align:justify;
+}
